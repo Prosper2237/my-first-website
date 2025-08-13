@@ -17,3 +17,21 @@ document.getElementById('welcome-btn').addEventListener('click', function () {
         msg.style.opacity = 1;
     }, 50);
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('messagBox').value.trim();
+    const status = document.getElementById('formStatus');
+
+    if (name && email && message) {
+        status.style.color = 'green';
+        status.textContent = `Thank you, ${name}! Your message has been sent.`;
+        this.reset();
+    } else {
+        status.style.color = 'red';
+        status.textContent = 'Please fill out all fields.'
+    }
+});

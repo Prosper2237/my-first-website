@@ -14,3 +14,32 @@ button {
 #message {
     transition: opacity 0.5s ease-out;
 }
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"]{
+    background: #27ae60;
+    color: white;
+}
+
+button[type="submit"]{
+    background-color: #1e8449;
+}
