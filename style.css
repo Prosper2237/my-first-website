@@ -56,6 +56,21 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
-    transition: scale(1.05);
+    background-color: #ff6600;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: columm;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+@keyframes fade-in {
+    form { opacity: 0;}
+    to {opacity: 1;}
 }

@@ -43,3 +43,5 @@ document.getElementById('welcome-btn').addEventListener('click', function () {
     setTimeout(() => msg.style.opacity = 1, 10);
 
 });
+
+document.getElementById("topBtn").onclick =() => window.scrollTo({top: 0, behaviour: 'smooth'});
