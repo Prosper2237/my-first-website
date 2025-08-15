@@ -45,3 +45,18 @@ document.getElementById('welcome-btn').addEventListener('click', function () {
 });
 
 document.getElementById("topBtn").onclick =() => window.scrollTo({top: 0, behaviour: 'smooth'});
+
+// show or hide the button on scroll
+window.addEventListener('scroll', function() {
+    const topBtn =this.document.getElementById('topBtn');
+    if (this.window.scrollY >300) {
+        topBtn.classlist.add('show');
+    } else {
+        topBtn.classList.remove('show');
+    }
+});
+
+// smoth scroll to top
+document.getElementById('topBtn').addEventListener('click', function() {
+    window.scrollTo({top: 0, behaviour: 'smoth'});
+});
